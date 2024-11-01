@@ -1,0 +1,227 @@
+/*
+
+Plugin Name: Tipsmoon Infinite Scroll Posts Gallery
+Description: Add scroll gallery on home page or any page for all your posts via shortcode
+Version: 1.0
+Author: Ramzan Ullah
+Author URI: http://www.tipsmoon.com
+License: 
+
+  This file is part of Tipsmoon Infinite Scroll Posts Gallery.
+
+    Tipsmoon Infinite Scroll Posts Gallery is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Tipsmoon Infinite Scroll Posts Gallery is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Tipsmoon Infinite Scroll Posts Gallery.  If not, see <http://www.gnu.org/licenses/>.
+
+*/
+
+
+.slider {
+  width: 560px;
+  max-width:100%;
+overflow: hidden;
+  height: 200px;
+  position:relative;
+  margin:0 auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+   
+}
+
+.slider ul {
+  list-style: none;
+  height: 200px;
+  width:6000px;
+ 
+   
+   
+   margin: 0;
+  padding: 0;
+background-color: #FFFFFF;
+ 
+
+
+
+
+
+
+ 
+}
+.slider li {
+  float: left;
+  height: 200px;
+  width: 140px;
+  padding: 0;
+  margin:0;
+  display:block;
+  list-style:none;
+  
+
+
+
+
+
+
+
+  /* border:1px solid #3333CC;*/
+}
+
+.slider img {
+padding:0em;
+margin:0em;
+
+
+}
+
+.button, .index {
+position:absolute;
+top:180px;
+left:45%;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  display: block;
+  padding: 6px;
+  border: 1px solid #ccc;
+  
+}
+.index {
+  text-align: center;
+  display:none;
+}
+
+.back {
+position:absolute;
+top:3px;
+  left: 0px;
+  width:25px;
+  height:100px;
+  background:url(back_arrow.png) no-repeat;
+}
+.forward {
+
+  position:absolute;
+top:3px;
+  left: 95%;
+  width:25px;
+  height:100px;
+  background:url(forward_arrow.png) no-repeat;
+  
+}
+
+
+
+#loading_ajax
+{
+  display:none;
+  width:65px;
+  height:65px;
+  position:absolute;
+  top:30px;
+  left:80%;
+  padding:2px;
+  background: url(ajax-loader.gif) no-repeat;
+ 
+}
+
+
+<!-- style code for sidebar related posts widget -->
+
+/*
+.tip_scroll_thumb {margin: 0 1px 0 1px; }
+.tip_scroll_thumb img {margin: 5px 5px 5px 5px; padding-right:3px; float:left; max-width:150px; max-height:100px; overflow:hidden; }
+.tip_scroll_thumb a {color :#333; text-decoration: none; display:block; padding: 4px; }
+.tip_scroll_thumb a:hover {color: #000;}
+
+.tip_scroll_content { position:absolute;  margin-top:18%; margin-right:1%; margin-left:1%;  max-width:145px;}
+.tip_scroll_content h3 { font-size:0.6em; margin: 0 0 5px 0;}
+*/
+
+.gal_posts_h {
+width: 100%; 
+}
+
+.gal_posts_h ul {
+position:relative;
+overflow:hidden; 
+left:0px;
+
+}
+
+.gal_posts_h ul li {
+list-style:none;
+position:relative;
+top:2px;
+left:0px;
+width: 140px;
+  max-width:24%;
+margin-left:0px; 
+border:none;
+font-size:.70em;
+text-align:center;
+display:inline-block;
+float:left;
+margin-bottom:3px;
+margin-top:2px;
+
+line-height:1.2em;
+background-color: #FFFFFF ;
+ }
+/* old backup
+.relatedthumb_h {
+margin:0 auto;
+height:70px; 
+width:100px;  }
+*/
+.gal_thumb_h {
+
+margin:0 auto;
+height:100px; 
+width:90%;
+padding-top:3px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.relatedthumb_h a {
+color :#333;
+text-decoration: none;
+display:block; 
+margin-left:2px;  }
+
+.gal_content_h { 
+width:90%; 
+height:70px; 
+position:relative;
+top:10px;
+
+ }
+
+.gal_content_h a {
+font-size:0.9em;
+margin: 0 0 0px 3px; 
+color: #0033CC    ; 
+text-decoration: none; 
+text-shadow: 2px 2px 4px #3399FF   ;
+    }
+	
+
+
+<!--End style code for wordpress related posts-->
+/*
+a:link, a:visited {
+  color: blue;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+*/
